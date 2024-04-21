@@ -8,10 +8,24 @@ body {
   font-family: Besley, serif;
 }
 
+.header,
+.header-left,
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+}
+
+.header-left,
+.header-right {
+  gap: 16px;
 }
 
 .profile-image {
@@ -27,6 +41,17 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  padding: 0;
+  gap: 16px;
+  margin-left: 0;
 }
 
 button {
@@ -36,6 +61,8 @@ button {
   color: white;
   padding: 8px 24px;
 }
+
+
 
 a {
   /* this removes the line under our links */
